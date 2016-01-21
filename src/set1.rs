@@ -9,7 +9,10 @@ pub fn hex_to_64(input: String) -> String{
 }
 
 pub fn xor(first: String, second: String) -> String{
-    let mut answer = first;
-    answer.push_str(&second);
-    answer
+    let first_h = first.from_hex().unwrap();
+    let second_h = second.from_hex().unwrap();
+    let xor_result: Vec<u8> = Vec::new();
+    for (elem_of_first, elem_of_second) in first_h.iter().zip(second_h.iter()) {
+
+    }
 }
