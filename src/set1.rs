@@ -7,3 +7,9 @@ pub fn hex_to_64(input: String) -> String{
     let output = input.from_hex().unwrap().to_base64(serialize::base64::STANDARD);
     output
 }
+
+pub fn xor(first: String, second: String) -> String{
+    let mut answer = first;
+    answer.push_str(&second);
+    answer
+}
