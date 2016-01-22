@@ -1,3 +1,5 @@
+//Authored by William Elder, 2016
+//Licensed under MIT license where applicable.  Full license text in readme.
 use std::env;
 mod set1;
 
